@@ -27,7 +27,7 @@ body {
 #question-btn {
   font-family: cursive;
   font-weight: 600;
-  height: 7vh;
+  height: 8vh;
   width: 25vw;
   border-radius: 15em;
   background: yellow;
@@ -38,7 +38,6 @@ body {
 
 #question-btn:hover {
   transform: scale(2px);
-  background: orange;
 }
 
 #question-btn:active {
