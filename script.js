@@ -5,7 +5,7 @@ import { questions } from './data.js';
 const questionHolder = document.getElementById("question-holder");
 const questionBtn = document.getElementById("question-btn");
 
-const answeredQuestions = [];
+/*const answeredQuestions = [];
 const unansweredQuestions = questions;
 
 const generateRandomQuestion = function() {
@@ -20,8 +20,27 @@ const generateRandomQuestion = function() {
     generateRandomQuestion;
   };
 };
+*/
 
-questionBtn.addEventListener("click", generateRandomQuestion);
+const remainingQuestions = [...questions];
+
+const getRandomQuestion = function() {
+  if(remainingQuestions.length === 0) {
+    questionHolder.textContent = "All questions answered!";
+    questionHolder.style.display = "flex";
+  } else {
+    const randomNumber = Math.floor(Math.random() * remainingQuestions.length);
+    questionHolder.textContent = remainingQuestions[randomNumber];
+    questionHolder.style.display = "flex";
+    questionBtn.textContent = "Next";
+    remainingQuestions.splice(randomNumber, 1);
+    console.log(remainingQuestions);
+  }
+};
+
+questionBtn.addEventListener("click", getRandomQuestion);
+
+//questionBtn.addEventListener("click", generateRandomQuestion);
 // console.log(questions.length, unansweredQuestions);
 
 //    CODE TO TRY TO NOT PAUSE WHEN SAME QUESTION
