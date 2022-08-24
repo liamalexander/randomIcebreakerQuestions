@@ -42,6 +42,7 @@ const questions = [
   "If you had to delete all but 3 apps from your smartphone, which ones would you keep?",
   "What would your dream house be like?",
   "Are you a cat person or a dog person?",
+  "What is the best thing in your town / city?",
 ];
 
 export {questions};
