@@ -67,9 +67,10 @@ body {
 
 #question-holder {
   display: none;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin: 5vh;
-  width: 80%;
+  width: 90%;
   justify-content: center;
   text-align: center;
+  line-height: 2;
 }
