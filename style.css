@@ -22,21 +22,30 @@ body {
   height: 100vh;
   width: 100vw;
   align-items: center;
+
   /*justify-content: center;
   justify-content: flex-end;
   padding-bottom: 15vh;*/
 }
 
 #title-holder {
-  background: linear-gradient(to right, #F761A1 , #8C1BAB);
+  /* background: linear-gradient(to right, #F761A1 , #8C1BAB); */
+  background: linear-gradient(to right, #C0E2F0, #49B6FF);
   width: 100%;
   text-align: center;
   color: #ffffff;
   font-family: cursive;
+
+      /* NEW BELOW */
+  /* background-image: linear-gradient(to right, #C0E2F0, #49B6FF);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700; */
 }
 
 #title {
   font-size: 1.6em;
+  font-weight: 700;
 }
 
 #question-btn {
@@ -45,12 +54,10 @@ body {
   height: 10vh;
   width: 25vw;
   border-radius: 15em;
-  /*background: yellow;*/
-  background: linear-gradient(to right, #F761A1 , #8C1BAB);
+  /* background: linear-gradient(to right, #F761A1 , #8C1BAB); */
+  background: linear-gradient(to right, #C0E2F0, #49B6FF);
   border: none;
   color: #ffffff;
-  /*border: 0.15em solid cadetblue;
-  box-shadow: 0px 5px 5px 1px blue;*/
   cursor: pointer;
   position: absolute;
   bottom: 5vh;
@@ -65,12 +72,21 @@ body {
   transform: translateY(4px);
 }
 
+    /* NEW BELOW - ALL Q-WRAPPER, IF REMOVE, DELETE FROM HTML TOO */
+
+.question-wrapper {
+  background-image: linear-gradient(to right, #C0E2F0, #49B6FF);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 #question-holder {
   display: none;
   font-size: 1.2rem;
-  margin: 5vh;
+  margin: 5vh auto;
   width: 90%;
   justify-content: center;
   text-align: center;
   line-height: 2;
+  font-weight: 600;
 }
