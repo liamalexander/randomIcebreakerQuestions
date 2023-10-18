@@ -43,6 +43,20 @@ const questions = [
   "What would your dream house be like?",
   "Are you a cat person or a dog person?",
   "What is the best thing in your town / city?",
+  "What is the best gift you've ever given?  and received?",
+  "If you could have a meal with 4 people, who would they be?",
+  "Would you rather have good looks but no intelligence or be ugly but intelligent?",
+  "What's the best family recipe you have?",
+  "If you had a warning label, what would it say?",
+  "Who was your first crush?",
+  "When was the fist moment you realised you were an adult?",
+  "If one of your parents were the President, what would be their first law?",
+  "What would be your slogan if you ran for President?",
+  "What is the most awkward date you have ever been on?",
+  "Have you ever met a real person with an unfortunate name?",
+  "Who is your craziest / most interesting relative?",
+  "Tell us a funny pick up line that works for you",
+  "Tell us a website / series you're embarrassed to admit you love?"
 ];
 
 export {questions};
